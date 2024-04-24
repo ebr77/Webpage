@@ -1,0 +1,305 @@
+
+/*-------------------------------------
+		General css (Reset code)
+--------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:14px;
+	color:#a09e9c;
+    text-transform:initial;
+    margin:0 auto;
+}
+
+a,a:hover,a:active,a:focus {
+	display:inline-block;
+	color: #343a3f;
+	font-size:16px;
+	padding:0;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+h1,h2,h3,h4,h5,h6 { 
+	margin: 0;
+	color:#343a3f;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+p {
+	margin: 0;
+	color:#767f86;
+	font-size:14px;
+    line-height: 1.8;
+    text-transform: initial;
+}
+
+select,input,textarea,button{box-shadow:none;outline:0!important;}
+
+html,body{height: 100%;}
+
+.section-header{
+    position: relative;
+    text-align: center;
+}
+.section-header h2{
+    color: #505866;
+    font-size:24px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.section-header p{
+    font-size:16px;
+}
+
+
+
+/*-------------------------------------
+        Header-top
+--------------------------------------*/
+.header-top{border-bottom:1px solid #f6f8fa;}
+
+.header-top ul li {display: inline-block;}
+
+
+.select-opt,.header-top-contact{
+    padding: 10px 18px;
+    border-right: 1px solid #f6f8fa;
+}
+
+.select-opt a span.lnr-magnifier:before {
+    font-size: 12px;
+    color: #373939;
+}
+
+/*-------------------------------------
+        Top-area
+--------------------------------------*/
+nav.navbar.bootsnav {
+    background-color:#fff;
+    border-bottom: transparent;
+}
+
+/*.navbar-brand*/
+.navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
+    display: inline-block;
+    color: #1b1e20;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 34px 0px;
+}
+.navbar-header a.navbar-brand span{display: inline-block;color:#1b15ce;text-transform:capitalize;}
+
+
+/*Festivals*/
+nav.navbar.bootsnav ul.nav > li > a {padding:34px 21px;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus{color: #1b15ce;}
+nav.navbar.bootsnav ul.nav > li.active>a {color: #1b15ce;}
+
+
+/*.navbar-toggle */
+nav.navbar.bootsnav .navbar-toggle {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #ff545a;
+    padding: 10px;
+    top: 0;
+}
+nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
+/*.navbar-toggle */
+
+/*-------------------------------------
+        Welcome-hero
+--------------------------------------*/
+.welcome-hero {
+    position: relative;
+    background:url(../images/welcome-hero/banner.jpg)no-repeat;
+    background-position:center;
+    background-size:cover;
+    text-align: center;
+    height:800px;
+}
+.welcome-hero:before{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(65,73,89,.65);
+
+}
+.welcome-hero-txt { padding-top: 155px;}
+
+.welcome-hero-txt h2 {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    line-height: 1.4;
+}
+
+.welcome-hero-serch-box{margin-top: 78px;display: flex;}
+.welcome-hero-form {
+    display: flex;
+    background: #fff;
+    height: 70px;
+    border-radius: 3px;
+    width: 85%;
+}
+
+.single-welcome-hero-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.single-welcome-hero-form input {
+    margin-left: 10px;
+    height: 70px;
+    width: 300px;
+    border: 0;
+    background: transparent;
+}
+
+
+.welcome-hero-btn {
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+    font-size:  14px;
+    color:  #fff;
+    width:  170px;
+    height:  70px;
+    background:  #1b15ce;
+    margin-left:  30px;
+    border-radius: 3px;
+}
+
+
+
+/*-------------------------------------
+        List
+--------------------------------------*/
+.list-topics-content {
+    position: relative;
+    top: -98px;
+    z-index: 1;
+}
+.list-topics-content ul li { display: inline-block;}
+
+.single-list-topics-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 205px;
+    height: 170px;
+    background:#fff;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0px 10px rgba(71,71,71,.2);
+
+}
+
+.single-list-topics-content:hover h2>a,.single-list-topics-content:hover p{color: #fff!important;}
+.single-list-topics-content:hover{
+    color: #fff;
+    background:#1b15ce;
+    box-shadow: 0 5px 10px rgba(71,71,71,.4);
+}
+
+/*-------------------------------------
+        Blog
+--------------------------------------*/
+.blog{padding:10px 0 90px;}
+.blog-content{margin-top: 80px;}
+
+.single-blog-item-txt {padding:  25px 28px 27px;}
+.single-blog-item-txt h2 a {text-transform:  initial;line-height: 1.8;}
+.single-blog-item-txt h4 {
+    color:  #8f949d;
+    font-weight:  400;
+    margin: 12px 0 20px;
+}
+
+.single-blog-item:hover h2 a {color:#1b15ce;}
+.single-blog-item:hover{
+    box-shadow: 0 10px 20px rgba(21,19,19,.4);
+}
+
+/*-------------------------------------
+        Footer
+--------------------------------------*/
+.footer-menu {padding: 45px 0;
+    padding:0;
+    height: 0;
+}
+
+.footer-menu .navbar-header{padding:0;}
+.footer-menu .navbar-header a.navbar-brand,.footer-menu.footer-menu .navbar-header a.navbar-brand:hover,.footer-menu .navbar-header a.navbar-brand:focus{
+    padding:0;
+    height: 0;
+}
+
+.footer-menu ul.footer-menu-item li a:hover{color: #1b15ce;}
+.hm-footer-copyright {
+    padding: 40px 0;
+    border-top: 1px solid #e1e5eb;
+}
+
+.footer-social {text-align: right;}
+
+
+
+/*===============================
+    Scroll Top
+===============================*/
+#scroll-Top  .return-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background:#1b15ce;
+	border:1px solid #1b15ce;
+	border-radius:50%;
+}
+#scroll-Top  .return-to-top:hover {
+    background:#1b15ce;
+	border:1px solid #1b15ce;
+}
+
+#scroll-Top  .return-to-top i{
+    position:relative;
+    bottom:0;
+
+}
+
+#scroll-Top  .return-to-top i{
+    position: relative;
+    animation-name: example;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+}
+@keyframes example {
+    0%   {bottom:0px;}
+    100%  {bottom:7px;}
+}
